@@ -1,0 +1,36 @@
+{
+  "name": "ebirder",
+  "version": "1.0.0",
+  "description": "WebApp for Bird watchers",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "concurrently \"nodemon index.js\" \"npm start --prefix=client\"",
+    "heroku-postbuild": "cd client && npm install && npm run build"
+  },
+  "engines": {
+    "node": "10.15.3",
+    "npm": "^6.4.1"
+  },
+  "keywords": [
+    "birder",
+    "bird",
+    "watching",
+    "birding",
+    "bird watching",
+    "birding hotspots"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "concurrently": "^4.1.1",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "jsonwebtoken": "^8.5.1",
+    "lodash": "^4.17.15",
+    "mongoose": "^5.6.7",
+    "validator": "^11.1.0"
+  },
+  "devDependencies": {}
+}

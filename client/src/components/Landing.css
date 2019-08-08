@@ -1,0 +1,63 @@
+.App {
+  text-align: center;
+}
+
+.App-header {
+  background-color: lightgreen;
+  background-size: cover;
+  background-position: top;
+  background-image: linear-gradient(to right bottom, #bcd6cb09, #1b1e202d) , url(https://live.staticflickr.com/4805/46159172131_1d71209c24_h_d.jpg);
+  background-repeat: 'no-repeat';
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+  /* clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%) */
+  /* clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 15% 50%, 0% 0%); */
+  /* clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%); */
+  /* clip-path: ellipse(97% 61% at 0% 61%); */
+}
+
+.heading-primary {
+  color: #fff;
+  backface-visibility: hidden;
+  margin-bottom: 30px;
+}
+
+.heading-primary-main {
+  display: block;
+  font-size: 60px;
+  font-weight: 500;
+  letter-spacing: 20px;
+  color: greenyellow;
+  animation-name: moveFromTop;
+  animation-duration: 3s;
+  animation-timing-function: ease-out;
+}
+
+.heading-primary-sub {
+  display: block;
+  font-size: 30px;
+  font-weight: 400;
+  letter-spacing: 10px;
+  animation: scaleUp 2s linear;
+  animation-delay: 2s;
+}
+
+.latlonText {
+  font-size: 15px;
+  font-weight: 100;
+  margin-top: 15px;
+}
+
+.search-box {
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  margin: auto
+}
